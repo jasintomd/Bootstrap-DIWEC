@@ -1,0 +1,1125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta lang="es-Es" charset="UTF-8">
+	<title>El yucateco malteco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <!-- RESOLUCIONES
+    MOVIL: 360x575
+    TABLET: 768*1024
+    ORDENADOR: 1366x662
+     -->
+    
+
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+
+
+	
+
+    
+
+    
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<script src='scripts/script.js' type="text/javascript"></script>
+
+    
+<!--links a css-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/cabecera.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/carta.css">
+    <link rel="stylesheet" href="styles/reservas.css">
+    <link rel="stylesheet" href="styles/galeria.css">
+    <link rel="stylesheet" href="styles/comentarios.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+</head>
+<body data-spy="scroll" data-target="#cabNav" data-offset="50">
+    
+
+    <div id="cabecera">
+ <nav class="navbar navbar-default navbar-fixed-top" id='cabNav'>
+  <div class="container-fluid">
+   <img src="img/logo.jpg" class='' id='cabLogo'>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" id="cabBoton" data-toggle="collapse" data-target="#cabMenu">
+        <span class='glyphicon glyphicon-menu-hamburger'  id='cabIcono'></span>
+      </button>
+      <a class="navbar-brand cabOpcion" id='cabTitulo' href="#home">El Yucateco Malteco</a>
+    </div>
+    <div class="collapse navbar-collapse" id="cabMenu">
+      <ul class="nav navbar-nav">
+       <li><a href="#home" class='cabOpcion'>Home</a></li>
+      <li><a href="#carta" class='cabOpcion'>Carta / Menús</a></li>
+      <li><a href="#reservas" class='cabOpcion'>Reservas</a></li>
+      <li><a href="#galeria" class='cabOpcion'>Galería</a></li>
+      <li><a href="#comentarios" class='cabOpcion'>Comentarios</a></li>
+      <li><a href="#contacto" class='cabOpcion'>Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </div>
+    <div class="seccion" id="home">
+        <h1>EL Yucateco Malteco</h1>
+        <div id=homInfo>
+            <p>Bienvenido a El Yucateco Malteco, el mejor restaurante de comida mexicana de la historia.</p><p>Prueba nuestra gastronomía yucateca ¿Estás preparado para viajar sin salir de la ciudad?.</p>
+        </div>
+    </div>
+    
+    <section class="parallax" id="section1">
+        
+    </section>
+    
+ <div class="seccion" id="carta">
+    
+
+    <div class='container-fluid'>
+    <div class='row'>
+    <div class='col-xs-12'><h1 class="tituloSeccion">Carta</h1>
+		</div>
+   </div>
+    <div class='row'>
+    <div class='col-xs-6 carBotones'>
+	<ul class="nav nav-tabs nav-stacked md-pills pills-ins carOpcion" id='carCartaMenu' role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#panel11" role="tab"><i class="fa fa-user"></i>Carta</a>
+    </li>
+</ul>
+</div>
+<div class='col-xs-6 carBotones'>
+<div class="dropdown carOpcion">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id='carDesplegable'>Nuestros Menús
+  <span class="caret"></span></button>
+   <ul class="dropdown-menu" id='carListaMenu'>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel12" role="tab"><i class="fa fa-heart"></i> Menú 1</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel13" role="tab"><i class="fa fa-envelope"></i> Menú 2</a>
+    </li>    
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel14" role="tab"><i class="fa fa-envelope"></i> Menú 3</a>
+    </li>    
+       <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#panel15" role="tab"><i class="fa fa-envelope"></i> Menú 4</a>
+    </li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class='row'>
+<div class='col-xs-12'>
+<div class="tab-content">
+    <div class="tab-pane fade in active" id="panel11"  role="tabpanel">
+       	<br>
+	<div class='row'>
+       <div class='col-xs-4' id='carPlatos'>
+        <a href="#carEntrantes" class='btn' data-toggle="collapse">	ENTRANTES</a>
+        <a href="#carPrimeros" class='btn' data-toggle="collapse">PRIMEROS</a>
+        <a href="#carSegundos" class='btn' data-toggle="collapse">SEGUNDOS</a>
+        <a href="#carPostres" class='btn' data-toggle="collapse">POSTRES</a>
+        <a href="#carBebidas" class='btn' data-toggle="collapse">BEBIDAS</a>
+		</div>
+		<div class='col-xs-8' id='carContenedorCarta'>
+			<div id="carEntrantes" class="collapse">
+				<h4 id='carTituloSeccion'>- Entrantes -</h4>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Guacamole <span id='carPrecio'>5.40€</span></div>
+					<div id='carDescripcion'>Aguacate machacado con especias acompañado de totopos de maíz</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Sincronizadas <span id='carPrecio'>5.00€</span></div>
+					<div id='carDescripcion'>Tortitas de harina rellenas de jamón de York y queso fundido</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Nachos "El rifador" <span id='carPrecio'>6.50€</span></div>
+					<div id='carDescripcion'>Una montaña de totopos con queso, salsa chile con carne o pollo, guacamole y salsa agria</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Quesadillas<span id='carPrecio'>5.30€</span></div>
+					<div id='carDescripcion'>Dos tortas de harina rellenas de queso, pollo, atún carne o gambas</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Chile con carne<span id='carPrecio'>5.55€</span></div>
+					<div id='carDescripcion'>Carne picada con frijoles y arroz</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Frijoles<span id='carPrecio'>6.00€</span></div>
+					<div id='carDescripcion'>Preparados en cazuela con caldito y queso</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Quesadilla Edgar<span id='carPrecio'>5.50€</span></div>
+					<div id='carDescripcion'>Quesadillas clásicas con champiñones</div>
+				</div>
+			</div>		
+			<div id="carPrimeros" class="collapse">
+				<h4 id='carTituloSeccion'>- Primeros -</h4>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Tacos al Pastor <span id='carPrecio'>8.00€</span></div>
+					<div id='carDescripcion'>Deliciosa carne de cerdo adobada con axiote, cebolla, cilantro, piña ¡y lima!</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Enchilada vegetariana <span id='carPrecio'>7.50€</span></div>
+					<div id='carDescripcion'>Delicioso nopal guisado envuelto en tortillas con salsa de tomate verde y queso</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cochinita Pibil<span id='carPrecio'>10.00€</span></div>
+					<div id='carDescripcion'>Carne de cerdo adobada con axiote cocida al horno y acompañada de cebolla morada</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Atún al Chipotle<span id='carPrecio'>11.30€</span></div>
+					<div id='carDescripcion'>Pescado con caña preparado al estilo Veracruz</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Ensalada "El Yucateco Malteco"<span id='carPrecio'>7.00€</span></div>
+					<div id='carDescripcion'>Torta gigante rellena de lechuga, tomate, maíz, espárragos, aliñada con nuestra salsa ranchera</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Ensalada 999 islas<span id='carPrecio'>7.80€</span></div>
+					<div id='carDescripcion'>Lechuga, pollo, piña, manzana, maíz, tomate aliñada con nuestra salsa 999 islas</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Huevos rancheros<span id='carPrecio'>7.80€</span></div>
+					<div id='carDescripcion'> Huevos estrellados bañados en salsa de tomate sobre una tortilla</div>
+				</div>
+			</div>			
+			<div id="carSegundos" class="collapse">
+				<h4 id='carTituloSeccion'>- Segundos -</h4>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Pasta chihuahua<span id='carPrecio'>11.00€</span></div>
+					<div id='carDescripcion'>Pasta fresca con pesto de cilantro, pechuga de pollo a la parrilla y langostinos</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Pollo Mole <span id='carPrecio'>12.30€</span></div>
+					<div id='carDescripcion'>Pechuga a la parrilla cubierta de salsa mole y guarnición de arroz y frijoles</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Chimichanga<span id='carPrecio'>10.75€</span></div>
+					<div id='carDescripcion'>Rollitos de harina rellenos de carne, chorizo, queso y acompañado de arroz</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Flautines de pollo<span id='carPrecio'>11.00€</span></div>
+					<div id='carDescripcion'>Cinco rollitos de maíz fritos con pollo, queso y ensalada</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Burrito<span id='carPrecio'>9.50€</span></div>
+					<div id='carDescripcion'>Torta de harina rellena con pollo, verdura o carne y su guarnición de pico de gallo, arroz y frijoles</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cerdo vegetariano<span id='carPrecio'>12.50€</span></div>
+					<div id='carDescripcion'>Cerdo en salsa roja, cubierto de lechuga, tomate, cebolla y salsa agria.
+					</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Fajitas de Ternera<span id='carPrecio'>10.50€</span></div>
+					<div id='carDescripcion'>Carne de ternera marinada con fondo de pimiento y cebolla. Demás ingredientes al gusto</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Fajitas de Marisco<span id='carPrecio'>15.50€</span></div>
+					<div id='carDescripcion'>Fajitas de gamba y cigala con salsa marinera.
+					Demás ingredientes al gusto</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Solomillo a la crema<span id='carPrecio'>13.50€</span></div>
+					<div id='carDescripcion'>Solomillo de Cerdo salteado con champiñones y vino blanco</div>
+				</div>
+			</div>			
+			<div id="carPostres" class="collapse">
+				<h4 id='carTituloSeccion'>- Postres -</h4>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Café Mexicano<span id='carPrecio'>2.10€</span></div>
+					<div id='carDescripcion'>Café de olla con tequila y canela</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Fondue de chocolate <span id='carPrecio'>9.50€</span></div>
+					<div id='carDescripcion'>Chocolate caliente con un toque de tequila (opcional) y frutas frescas. Mínimo 2 personas</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Chimichanga de mango <span id='carPrecio'>5.50€</span></div>
+					<div id='carDescripcion'>Torta rellena de mango con caramelo, helado de vainilla y nata</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Crepes chingones<span id='carPrecio'>6.80€</span></div>
+					<div id='carDescripcion'>Crepe gigante con fruta fresca y chocolate caliente, flambeado con tequila añejo</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Burrito Mexicano<span id='carPrecio'>5.55€</span></div>
+					<div id='carDescripcion'>Plátano relleno de nueces, helado de vainilla nata y chocolate caliente</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Tarta de mango con queso<span id='carPrecio'>6.00€</span></div>
+					<div id='carDescripcion'>Con fondo de galleta y acompañado de nata</div>
+				</div>
+			</div>			
+			<div id="carBebidas" class="collapse">
+				<h4 id='carTituloSeccion'>- Bebidas -</h4>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cerveza Coronita<span id='carPrecio'>2.00€</span></div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cerveza Negra Modelo<span id='carPrecio'>2.10€</span></div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cerveza Negra Modelo Especial<span id='carPrecio'>2.30€</span></div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cerveza Pacífico<span id='carPrecio'>2.50€</span></div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cerveza Bohemia<span id='carPrecio'>2.50€</span></div>
+				</div>	
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Refrescos<span id='carPrecio'>2.10€</span></div>
+				</div>			
+			</div>
+		</div>
+	</div>
+    </div>
+    <div class="tab-pane fade" id="panel12" role="tabpanel">
+    <br>
+     <div class='container-fluid' id='carContenedorCarta'>
+	<div class='row'>
+     <div class='col-xs-12'>
+      <h3 id='carTituloMenu'>- Menú 1-  <span id='carPrecio'>7.00€</span></h3>
+      </div>
+		</div>
+
+      <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Entrantes </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+       		<div id='carContenidoSeccion'>
+					<div id='carPlato'>Guacamole</div>
+					<div id='carDescripcion'>Aguacate machacado con especias acompañado de totopos de maíz</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Sincronizadas</div>
+					<div id='carDescripcion'>Tortitas de harina rellenas de jamón de York y queso fundido</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Nachos "El rifador"</div>
+					<div id='carDescripcion'>Una montaña de totopos con queso, salsa chile con carne o pollo, guacamole y salsa agria</div>
+				</div>
+		</div>
+	</div>
+         <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Primero </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+       		<div id='carContenidoSeccion'>
+					<div id='carPlato'>Tacos al Pastor </div>
+					<div id='carDescripcion'>Deliciosa carne de cerdo adobada con axiote, cebolla, cilantro, piña ¡y lima!</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Enchilada vegetariana </div>
+					<div id='carDescripcion'>Delicioso nopal guisado envuelto en tortillas con salsa de tomate verde y queso</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cochinita Pibil</div>
+					<div id='carDescripcion'>Carne de cerdo adobada con axiote cocida al horno y acompañada de cebolla morada</div>
+				</div>
+		</div>
+	</div>
+         <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Segundo </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+     			<div id='carContenidoSeccion'>
+					<div id='carPlato'>Pasta chihuahua</div>
+					<div id='carDescripcion'>Pasta fresca con pesto de cilantro, pechuga de pollo a la parrilla y langostinos</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Pollo Mole </div>
+					<div id='carDescripcion'>Pechuga a la parrilla cubierta de salsa mole y guarnición de arroz y frijoles</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Chimichanga</div>
+					<div id='carDescripcion'>Rollitos de harina rellenos de carne, chorizo, queso y acompañado de arroz</div>
+				</div>
+		</div>
+	</div>
+      <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-8'>
+  		<h5 id='carTituloSeccionMenu'> Platos destacados </h5>
+	 </div></div>
+     <div class='container-fluid'>
+      <div class='row carImagen'>
+      <div class='col-xs-12'>
+		  <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel1" data-slide-to="1"></li>
+    <li data-target="#myCarousel1" data-slide-to="2"></li>
+    <li data-target="#myCarousel1" data-slide-to="3"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/comida2.jpg" alt="Comida1">
+    </div>
+
+    <div class="item">
+      <img src="img/porloquepuedapasar.jpg" alt="Comida2">
+    </div>
+
+    <div class="item">
+      <img src="img/comida2.jpg" alt="Comida3">
+    </div>
+
+    <div class="item">
+      <img src="img/porloquepuedapasar.jpg" alt="Comida4">
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+</div>
+   </div>
+   </div>
+       <div class='row' id='carFilaSeccionMenu'>
+      	 <div class='col-xs-12'>
+  		  <h5 id='carTituloSeccionMenu'> Todos los menús incluyen bebida y café </h5>
+		 </div>
+		</div>
+    </div>
+	</div>
+    
+    <div class="tab-pane fade" id="panel13" role="tabpanel">
+        <br>
+     <div class='container-fluid' id='carContenedorCarta'>
+	<div class='row'>
+     <div class='col-xs-12'>
+      <h3 id='carTituloMenu'>- Menú 2-  <span id='carPrecio'>10.00€</span></h3>
+      </div>
+		</div>
+
+      <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Entrantes </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+       		<div id='carContenidoSeccion'>
+					<div id='carPlato'>Guacamole</div>
+					<div id='carDescripcion'>Aguacate machacado con especias acompañado de totopos de maíz</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Sincronizadas</div>
+					<div id='carDescripcion'>Tortitas de harina rellenas de jamón de York y queso fundido</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Nachos "El rifador"</div>
+					<div id='carDescripcion'>Una montaña de totopos con queso, salsa chile con carne o pollo, guacamole y salsa agria</div>
+				</div>
+		</div>
+	</div>
+         <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Primero </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+       		<div id='carContenidoSeccion'>
+					<div id='carPlato'>Tacos al Pastor </div>
+					<div id='carDescripcion'>Deliciosa carne de cerdo adobada con axiote, cebolla, cilantro, piña ¡y lima!</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Enchilada vegetariana </div>
+					<div id='carDescripcion'>Delicioso nopal guisado envuelto en tortillas con salsa de tomate verde y queso</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cochinita Pibil</div>
+					<div id='carDescripcion'>Carne de cerdo adobada con axiote cocida al horno y acompañada de cebolla morada</div>
+				</div>
+		</div>
+	</div>
+         <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Segundo </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+     			<div id='carContenidoSeccion'>
+					<div id='carPlato'>Pasta chihuahua</div>
+					<div id='carDescripcion'>Pasta fresca con pesto de cilantro, pechuga de pollo a la parrilla y langostinos</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Pollo Mole </div>
+					<div id='carDescripcion'>Pechuga a la parrilla cubierta de salsa mole y guarnición de arroz y frijoles</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Chimichanga</div>
+					<div id='carDescripcion'>Rollitos de harina rellenos de carne, chorizo, queso y acompañado de arroz</div>
+				</div>
+		</div>
+	</div>
+    <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-8'>
+  		<h5 id='carTituloSeccionMenu'> Platos destacados </h5>
+	 </div></div>
+          <div class='container-fluid'>
+      <div class='row carImagen'>
+      <div class='col-xs-12'>
+		  <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel2" data-slide-to="1"></li>
+    <li data-target="#myCarousel2" data-slide-to="2"></li>
+    <li data-target="#myCarousel2" data-slide-to="3"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/comida2.jpg" alt="Comida1">
+    </div>
+
+    <div class="item">
+      <img src="img/porloquepuedapasar.jpg" alt="Comida2">
+    </div>
+
+    <div class="item">
+      <img src="img/comida2.jpg" alt="Comida3">
+    </div>
+
+    <div class="item">
+      <img src="img/porloquepuedapasar.jpg" alt="Comida4">
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+</div>
+   </div>
+   </div>
+       <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-12'>
+  		<h5 id='carTituloSeccionMenu'> Todos los menús incluyen bebida y café </h5>
+		  </div></div>
+    </div>
+
+    </div>
+
+    <div class="tab-pane fade" id="panel14" role="tabpanel">
+        <br>
+
+     <div class='container-fluid' id='carContenedorCarta'>
+	<div class='row'>
+     <div class='col-xs-12'>
+      <h3 id='carTituloMenu'>- Menú 3-  <span id='carPrecio'>13.00€</span></h3>
+      </div>
+		</div>
+
+      <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Entrantes </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+       		<div id='carContenidoSeccion'>
+					<div id='carPlato'>Guacamole</div>
+					<div id='carDescripcion'>Aguacate machacado con especias acompañado de totopos de maíz</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Sincronizadas</div>
+					<div id='carDescripcion'>Tortitas de harina rellenas de jamón de York y queso fundido</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Nachos "El rifador"</div>
+					<div id='carDescripcion'>Una montaña de totopos con queso, salsa chile con carne o pollo, guacamole y salsa agria</div>
+				</div>
+		</div>
+	</div>
+         <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Primero </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+       		<div id='carContenidoSeccion'>
+					<div id='carPlato'>Tacos al Pastor </div>
+					<div id='carDescripcion'>Deliciosa carne de cerdo adobada con axiote, cebolla, cilantro, piña ¡y lima!</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Enchilada vegetariana </div>
+					<div id='carDescripcion'>Delicioso nopal guisado envuelto en tortillas con salsa de tomate verde y queso</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cochinita Pibil</div>
+					<div id='carDescripcion'>Carne de cerdo adobada con axiote cocida al horno y acompañada de cebolla morada</div>
+				</div>
+		</div>
+	</div>
+         <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Segundo </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+     			<div id='carContenidoSeccion'>
+					<div id='carPlato'>Pasta chihuahua</div>
+					<div id='carDescripcion'>Pasta fresca con pesto de cilantro, pechuga de pollo a la parrilla y langostinos</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Pollo Mole </div>
+					<div id='carDescripcion'>Pechuga a la parrilla cubierta de salsa mole y guarnición de arroz y frijoles</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Chimichanga</div>
+					<div id='carDescripcion'>Rollitos de harina rellenos de carne, chorizo, queso y acompañado de arroz</div>
+				</div>
+		</div>
+	</div>
+      
+            <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-8'>
+  		<h5 id='carTituloSeccionMenu'> Platos destacados </h5>
+	 </div></div>
+      <div class='container-fluid'>
+      <div class='row carImagen'>
+      <div class='col-xs-12'>
+		  <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel3" data-slide-to="1"></li>
+    <li data-target="#myCarousel3" data-slide-to="2"></li>
+    <li data-target="#myCarousel3" data-slide-to="3"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/comida2.jpg" alt="Comida1">
+    </div>
+
+    <div class="item">
+      <img src="img/porloquepuedapasar.jpg" alt="Comida2">
+    </div>
+
+    <div class="item">
+      <img src="img/comida2.jpg" alt="Comida3">
+    </div>
+
+    <div class="item">
+      <img src="img/porloquepuedapasar.jpg" alt="Comida4">
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+</div>
+   </div>
+   </div>
+       <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-12'>
+  		<h5 id='carTituloSeccionMenu'> Todos los menús incluyen bebida y café </h5>
+		  </div></div>
+    </div>
+    </div>
+    
+    <div class="tab-pane fade" id="panel15" role="tabpanel">
+        <br>
+
+     <div class='container-fluid' id='carContenedorCarta'>
+	<div class='row'>
+     <div class='col-xs-12'>
+      <h3 id='carTituloMenu'>- Menú 4-  <span id='carPrecio'>15.00€</span></h3>
+      </div>
+		</div>
+
+      <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Entrantes </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+       		<div id='carContenidoSeccion'>
+					<div id='carPlato'>Guacamole</div>
+					<div id='carDescripcion'>Aguacate machacado con especias acompañado de totopos de maíz</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Sincronizadas</div>
+					<div id='carDescripcion'>Tortitas de harina rellenas de jamón de York y queso fundido</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Nachos "El rifador"</div>
+					<div id='carDescripcion'>Una montaña de totopos con queso, salsa chile con carne o pollo, guacamole y salsa agria</div>
+				</div>
+		</div>
+	</div>
+         <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Primero </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+       		<div id='carContenidoSeccion'>
+					<div id='carPlato'>Tacos al Pastor </div>
+					<div id='carDescripcion'>Deliciosa carne de cerdo adobada con axiote, cebolla, cilantro, piña ¡y lima!</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Enchilada vegetariana </div>
+					<div id='carDescripcion'>Delicioso nopal guisado envuelto en tortillas con salsa de tomate verde y queso</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Cochinita Pibil</div>
+					<div id='carDescripcion'>Carne de cerdo adobada con axiote cocida al horno y acompañada de cebolla morada</div>
+				</div>
+		</div>
+	</div>
+         <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-5'>
+  		<h5 id='carTituloSeccionMenu'> Segundo </h5>
+		  </div></div>
+      <div class='row'>
+       <div class='col-xs-12'>
+      		
+     			<div id='carContenidoSeccion'>
+					<div id='carPlato'>Pasta chihuahua</div>
+					<div id='carDescripcion'>Pasta fresca con pesto de cilantro, pechuga de pollo a la parrilla y langostinos</div>
+				</div>				
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Pollo Mole </div>
+					<div id='carDescripcion'>Pechuga a la parrilla cubierta de salsa mole y guarnición de arroz y frijoles</div>
+				</div>
+				<div id='carContenidoSeccion'>
+					<div id='carPlato'>Chimichanga</div>
+					<div id='carDescripcion'>Rollitos de harina rellenos de carne, chorizo, queso y acompañado de arroz</div>
+				</div>
+		</div>
+	</div>
+      
+            <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-8'>
+  		<h5 id='carTituloSeccionMenu'> Platos destacados </h5>
+	 </div></div>
+     <div class='container-fluid'>
+      <div class='row carImagen'>
+      <div class='col-xs-12'>
+		  <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel4" data-slide-to="1"></li>
+    <li data-target="#myCarousel4" data-slide-to="2"></li>
+    <li data-target="#myCarousel4" data-slide-to="3"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/comida2.jpg" alt="Comida1">
+    </div>
+
+    <div class="item">
+      <img src="img/porloquepuedapasar.jpg" alt="Comida2">
+    </div>
+
+    <div class="item">
+      <img src="img/comida2.jpg" alt="Comida3">
+    </div>
+
+    <div class="item">
+      <img src="img/porloquepuedapasar.jpg" alt="Comida4">
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+</div>
+   </div>
+   </div>
+       <div class='row' id='carFilaSeccionMenu'>
+      <div class='col-xs-12'>
+  		<h5 id='carTituloSeccionMenu'> Todos los menús incluyen bebida y café </h5>
+		  </div></div>
+    </div>
+    </div>
+
+</div>
+</div>
+</div>
+   </div>
+    </div>
+
+    <section class="parallax" id="section2">
+        
+    </section>
+    
+    
+    
+    
+    <div class="seccion" id="reservas">
+     
+      <div class='container-fluid'>
+      <div class='row'>
+    	<h1 class="tituloSeccion col-xs-12">Reservas</h1>
+        </div>
+        <div class="row">
+        <form id="resFormulario" class="form-group col-xs-12">
+          <div class="row">
+            <div class="input-field col-xs-12 col-md-6">
+              <label class="resEtiqueta" for="resNombre">Nombre</label>
+              <input  id="resNombre" type="text" class="form-control">
+            </div>
+            
+              
+              <div class='col-md-3'></div>
+            <div class="input-field col-xs-12 col-md-6">
+              <label class="resEtiqueta" for="resApellidos">Apellidos</label>
+              <input id="resApellidos" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col-xs-12 col-md-6">
+              <label class="resEtiqueta" for="resEmail">Email</label>
+              <input  id="resEmail" type="email" class="form-control">
+            </div>
+          
+           <div class='col-md-3'></div>
+            <div class="input-field col-xs-12 col-md-6">
+              <div class="range-field">
+              <label class="resEtiqueta" for="resPersonas">Número de personas:</label > <label id="resNum">4</label>
+            <input type="range" id="resPersonas" min="4" max="20" value="4"/>
+                </div>
+
+            </div>
+          </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <label class="resEtiqueta" for="datepicker">Fecha</label>
+            <input class="form-control" type="text" id="datepicker">
+                </div>
+                <div class="form-group input-field col-xs-6">
+                    <label class="resEtiqueta" for="resHora">Hora</label>
+                    <select class="form-control" id="resHora">
+                        
+                        <option disabled>---------Mañana--------</option>
+                        <option>13:30</option>
+                        <option>14:00</option>
+                        <option>14:30</option>
+                        <option>15:00</option>
+                        <option disabled>----------Noche---------</option>
+                        
+                        <option>21:00</option>
+                        <option>21:30</option>
+                        <option>22:00</option>
+                        <option>22:30</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+            <button id="resBoton" type="button" class="col-xs-12 btn btn-mdb" data-toggle="modal" data-target="#resMensaje">Reservar</button>
+            </div>
+            
+            
+        </form>
+	</div>
+          
+          
+          
+          
+          
+        <div class="modal fade" id="resMensaje" role="dialog">
+    <div class="modal-dialog">
+    
+        
+        
+        
+        
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Reserva confirmada.</h4>
+        </div>
+        <div class="modal-body">
+            <p>Gracias sr/a <label id="valNom"></label>, su reserva para <label id="valPer"></label> personas el día <label id="valDia"></label> a las <label id="valHor"></label> ha sido realizada correctamente. Se enviará un correo electrónico a <label id="valEma"></label> con los datos de la reserva.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>  
+	</div>
+           
+    </div>
+    <section class="parallax" id="section3">
+        
+    </section>
+    <div class="seccion" id="galeria">
+    <div class='container-fluid'>
+            <div class='row'>
+    	       <h1 class="tituloSeccion col-xs-12">Galería</h1>
+            </div> 
+            <div class='row'>
+				<div class="col-md-3"></div>
+    	      <div class="col-xs-12 col-md-6">
+		<div id="myCarousel5" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel5" data-slide-to="1"></li>
+    <li data-target="#myCarousel5" data-slide-to="2"></li>
+    <li data-target="#myCarousel5" data-slide-to="3"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/c1.jpg" alt="Plato">
+      <div class="carousel-caption">
+        <h3>Entomatadas</h3>
+        <p>Tortilla bañada en salsa de tomate, preparada con sal, ajo, cebolla, orégano y chile.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/c2.jpg" alt="Plato">
+      <div class="carousel-caption">
+        <h3>Tacos al Pastor</h3>
+        <p>Deliciosa carne de cerdo adobada con axiote, cebolla, cilantro, piña ¡y lima!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/c3.JPG" alt="Plato">
+      <div class="carousel-caption">
+        <h3>Guacamole</h3>
+        <p>Aguacate machacado con especias acompañado de totopos de maíz</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img/c4.jpg" alt="Plato">
+      <div class="carousel-caption">
+        <h3>Burrito</h3>
+        <p>Torta de harina rellena con pollo, verdura o carne y su guarnición de pico de gallo, arroz y frijoles</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/c5.jpg" alt="Plato">
+      <div class="carousel-caption">
+        <h3>Tacos Variados</h3>
+        <p>Amplia variedad en tacos para todos los paladares, todos preparados al más puro estilo mexicano.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/c6.jpg" alt="Plato">
+      <div class="carousel-caption">
+        <h3>Nachos "El Rifador"</h3>
+        <p>Una montaña de totopos con queso, salsa chile con carne o pollo, guacamole y salsa agria</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/c7.jpg" alt="Plato">
+      <div class="carousel-caption">
+        <h3>Enchiladas vegetarianas</h3>
+        <p>Delicioso nopal guisado envuelto en tortillas con salsa de tomate verde y queso</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/c8.jpg" alt="Plato">
+      <div class="carousel-caption">
+        <h3>Ensalada 999 islas</h3>
+        <p>Lechuga, pollo, piña, manzana, maíz, tomate y aliñada con nuestra salsa 999 islas</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/c9.jpg" alt="Plato">
+      <div class="carousel-caption">
+        <h3>Tarta de mango con queso</h3>
+        <p>Con fondo de Galleta y acompañado de nata</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/c10.jpg" alt="Plato">
+      <div class="carousel-caption">
+        <h3>Cerdo abierto por la mitad</h3>
+        <p>Cocinado en una reja tirada encima de una hoguera</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel5" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel5" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+           </div>
+            </div>
+        </div> 
+    </div>
+    
+    <section class="parallax" id="section4">
+        
+    </section>
+    
+    <div class="seccion" id="comentarios">
+        <div class='container-fluid'>
+      <div class='row'>
+    	<h1 class="tituloSeccion col-xs-12">Libro de visitas</h1>
+            </div>
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <input id="comNom" placeholder="Nombre" class="col-xs-10 form-control">
+            </div>
+            <div class="row">
+              <div class="col-xs-1"></div>
+            <textarea id="comTexto" placeholder="Escriba aquí su comentario" class="col-xs-10 form-control" ></textarea>
+            
+            </div>
+          <div class="row comentario">
+              <div class="col-xs-1"></div>
+              <div class="media col-xs-10">
+                <div class="media-body">
+                  <h4 class="media-heading">G. Jesús Morales <small><i>Escrito el 28/01/2017</i></small></h4>
+                  <p>Me ha encontado este sitio. Su servicio y comida son excelente y la página web mejor aún.</p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="row comentario">
+              <div class="col-xs-1"></div>
+              <div class="media col-xs-10">
+                <div class="media-body">
+                  <h4 class="media-heading">Arbitraria Molina <small><i>Escrito el 25/01/2017</i></small></h4>
+                  <p>La comida mexicana no es mi fuerte pero vi su página web y me llamó la atención. Ahora me encanta la comida mexicana, esta página me ha cambiado la vida.</p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="row comentario grande">
+              <div class="col-xs-1"></div>
+              <div class="media col-xs-10">
+                <div class="media-body">
+                  <h4 class="media-heading">Aleatorio Pérez <small><i>Escrito el 22/01/2017</i></small></h4>
+                  <p>Este restaurante es lo mejor que me ha pasado en mi vida, después de esta magnífica página web, simplemente 10/10!</p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="row comentario grande">
+              <div class="col-xs-1"></div>
+              <div class="media col-xs-10">
+                <div class="media-body">
+                  <h4 class="media-heading">Usuario Medio <small><i>Escrito el 20/01/2017</i></small></h4>
+                  <p>Hola! ¿Alguien me puede decir donde se escribe? </p>
+                    <div class="media col-xs-10">
+                    <div class="media-body">
+                  <h4 class="media-heading">Programador<small><i>Escrito el 20/01/2017</i></small></h4>
+                  <p>En la parte de arriba, tal y como has hecho antes. </p>
+
+                    
+                    
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <section class="parallax" id="section5">
+        
+    </section>
+    <div class="seccion" id="contacto">
+        <div id="conFluid" class='container-fluid'>
+            
+            <div class='row'>
+    	       <h1 class="tituloSeccion col-xs-12">Contacto</h1>
+            </div>
+            <div id="conTelefono" class="row">
+                <img src="img/phone.png" id="conTlfImg" class="col-xs-3 icono">
+                <h3 class="col-xs-9"><p class="conTlf">666 123 123</p><p class="conTlf">958 123 123</p></h3>
+                
+            </div>
+            <div id="conLocal" class="row">
+                <img src="img/contact.png" class="col-xs-3 icono">
+                <h3 class="col-xs-9"><p class="conDireccion">Calle del principe muerto, 27, Raftel.</p></h3>
+                
+            </div>
+            <div id="mapa" class='row'>
+    	       <div id="map" class="col-xs-12 "></div>
+            </div>
+        </div>   
+    </div>
+    
+    <footer class="row">
+        <div class="panel-footer text-center">
+    <p>Jacinto Martínez Duarte y Jose Pablo Ferre Leorini ® ©</p>
+        </div>
+      </footer>
+
+    <!-- Map -->
+    <script>function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(37.1792136, -3.5995391),
+        zoom: 15
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+}</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    
+</body>
+</html>

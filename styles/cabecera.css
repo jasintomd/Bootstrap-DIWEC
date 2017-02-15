@@ -1,0 +1,106 @@
+
+#cabNav{
+	background-color: white;
+	border: none;
+}
+
+#cabLogo{
+	max-width: 15%;
+	float: left;
+}
+
+#cabBoton{
+	background-color:rgba(196, 202, 211, 0.5);
+	transition: background-color 0.3s, color 0.3s;
+}
+
+#cabBoton:hover{
+	background-color:rgba(145, 148, 150, 0.5);
+}
+
+#cabIcono{
+	font-size: 20px;
+}
+
+#cabTitulo{
+	font-family: 'fuenteTitulo';
+	font-size: 4vw;
+	color: black;
+}
+
+#cabMenu.navbar-collapse{
+	border-top: none;
+}
+
+#cabMenu .navbar-nav>li>a{
+	color: black;
+	font-family: 'fuenteMenu';
+	font-size: 3.5vw;
+	text-align: center;
+	border-bottom: solid 2px #dbdde0;
+	transition: background-color  0.5s, font-size  0.3s, border-bottom 0.3s;
+}
+
+#cabMenu .navbar-nav>li>a:hover{
+	font-size: 4.6vw;
+	border-bottom: solid 2px grey;
+	background-color: rgba(196, 202, 211, 0.5);
+}
+
+
+
+@media all and (min-width: 768px){
+    
+   #cabMenu .navbar-nav>li>a{
+	color: black;
+	font-family: 'fuenteMenu';
+	font-size: 92%;
+	line-height: 37px;
+    height: 74px;
+}
+    #cabNav{
+
+    }
+    
+    #cabTitulo{
+        margin-left:15%
+    }
+	
+    #cabMenu .navbar-nav>li>a:hover{   
+    background-color: transparent;
+	font-size: 120%;
+    }
+    
+    #cabLogo{
+	height: 124px;
+	float: left;
+	}
+
+}
+
+@media all and (min-width: 860px){
+	
+	#nav>div.container-fluid>img, 
+	#nav>div.container-fluid>div.navbar-header,
+	#nav>div.container-fluid>div#cabMenu{
+		
+	}
+	
+	#cabTitulo{
+		margin-top: 5%;
+		font-size: 300%;
+		padding-left: 0;
+		margin-left: 10%;
+	}
+	
+	#cabMenu .navbar-nav>li>a{
+		border-top: solid 1px grey;
+		margin-top: 25px;
+		transition: padding-right 0.3s, font-size 0.3s, border-top 0.3s;
+	}
+	
+	#cabMenu .navbar-nav>li>a:hover{
+		padding-right: 0;
+		font-size: 120%;
+    }
+}

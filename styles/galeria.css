@@ -1,0 +1,33 @@
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+.carousel-caption{
+	font-family: fuenteCuerpo;
+	color: black;
+}
+
+.carousel-caption>p{
+	font-family: fuenteCarta;
+}
+
+.carousel-control{
+	opacity: 1;
+}
+
+#myCarousel5 > .carousel-control { background: none !important; filter: none !important; !important; }
+
+#myCarousel5 > .carousel-control > span{
+	font-size: 25px;
+	color: rgba(55, 232, 55, 1) !important;
+}
+
+@media all and (min-width: 860px){
+	
+	#myCarousel5 > .carousel-control > span{
+		font-size: 50px;
+	}
+	
+}

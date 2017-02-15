@@ -1,0 +1,65 @@
+
+#home{
+    background-image: url(../img/logo.jpg);
+    background-size:60%;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    text-align: center   
+    
+}
+#home h1{
+    font-family: "fuenteTitulo";
+    color:green;
+}
+#homInfo {
+    margin-left:3%;
+    margin-right:3%;
+    margin-top:80%;
+    
+}
+#homInfo p{
+    font-family: "fuenteCuerpo";
+    
+}
+@media all and (min-width: 768px){
+    #home h1{
+        margin-top: 10%;
+        font-size: 400%
+        
+}
+    #homInfo p{
+        font-size: 200%
+    }
+    
+}
+
+@media all and (min-width: 860px){
+    #home h1{
+        margin-top: -2%;
+        font-size: 700%
+        
+}
+    #homInfo{
+        font-size: 100%;
+        margin-left: 6%;
+        margin-top:8%;
+        width: 40%
+    }
+    #home{
+        
+        background-size:30%;
+        background-position:90% 60%;
+    }
+    
+}
+
+@media all and (min-width: 1800px){
+    
+    #homInfo{
+
+        margin-top:15%;
+        width: 40%
+    }
+    
+    
+}

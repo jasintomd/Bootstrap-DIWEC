@@ -1,0 +1,54 @@
+#comentarios{
+    background-image: url(../img/libr00o.jpg);
+    background-position: 9%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "fuenteMano";
+    font-size: 120%
+    
+}
+#comTexto, #comNom {
+    width: 75%;
+    margin-top: 3%;
+    margin-left: 3%;
+    background: rgba(255,255,255,0.3);
+    
+    
+}
+.comentario.grande{
+    display: none;
+    
+}
+@media all and (min-width: 768px){
+    .comentario.grande{
+        display: block;
+    }
+    .comentario{
+        margin-left:3%;
+        font-size:120%;
+        width: 80%
+    }
+    .media-heading{
+        font-size: 120%;
+    }
+    #comNom, #comTexto{
+        font-size: 120%;
+        width: 65%
+    }
+    
+}
+@media all and (min-width: 860px){
+    
+    .comentario{
+        margin-left:7%;
+        font-size:120%;
+        width: 45%
+    }
+    .media-heading{
+        font-size: 120%;
+    }
+    #comNom, #comTexto{
+        font-size: 120%;
+        width: 38%
+    }
+}

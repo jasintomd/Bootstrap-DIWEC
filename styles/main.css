@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'fuenteMenu';
+  src: url('../fonts/menu.ttf') format('truetype');  
+}
+
+@font-face {
+  font-family: 'fuenteCuerpo';
+  src: url('../fonts/cuerpo.ttf') format('truetype');  
+}
+
+@font-face {
+  font-family: 'fuenteTitulo';
+  src: url('../fonts/Taco.ttf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'fuenteCarta';
+  src: url('../fonts/carta.ttf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'fuenteMano';
+  src: url('../fonts/Luna2.ttf') format('truetype'); 
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.row{
+	margin: auto;
+}
+body{
+	padding-top: 10%;
+}
+
+.seccion{
+    height: 100%;
+}
+#home{
+    height: 90%;
+
+}
+
+    #comentarios{
+        margin-bottom:-10%
+    }
+
+section{
+    margin-top:10%;
+    height: 20%;
+    background-attachment: fixed;
+    background-position: center;
+
+    background-size: cover;
+    background-repeat: no-repeat
+}
+#section1{
+   background-image: url(../img/carta.jpg);
+}
+#section2{
+   background-image: url(../img/reservado2.jpg);
+}
+#section3{
+   background-image: url(../img/comida2.jpg);
+}
+#section4{
+   background-image: url(../img/porloquepuedapasar.jpg);
+}
+#section5{
+   background-image: url(../img/comida2.jpg);
+}
+.tituloSeccion{
+    font-family: "fuenteMenu";
+    height: 1%;
+    width: 100%;
+    text-align: center;
+	border-bottom: 2px solid;
+	border-bottom-style: dashed;
+    margin-bottom: 5%;
+}
+
+.row{
+    width: 100%
+}
+@media all and (min-width: 768px){
+    .tituloSeccion{
+        font-size: 400%
+    }
+    #galeria{
+        height: 70%
+    }
+    
+}
+@media all and (min-width: 860px){
+    .seccion{
+        height: 1050px;
+    }
+    section{
+        margin-top: 0%;
+        height: 40%
+        
+}
+    #reservas{
+        height: 120%;
+    }
+    #comentarios{
+        height: 200%;
+            margin-bottom: 0
+    }
+    #galeria{
+        height: 150%
+    }
+    #contacto{
+        height: 120%
+    }
+    #home{
+        height: 120%
+    }
+}
+@media all and (min-width: 1800px){
+    
+    section{
+
+        height: 50%
+    }
+    
+    
+}

@@ -1,0 +1,63 @@
+#contacto{
+    font-family: "fuenteCuerpo"
+}
+#conFluid{
+    height: 100%;
+}
+#mapa{
+    height: 40%;
+    margin-top:10%;
+}
+#map{
+    height: 100%;
+}
+#conTlfImg{
+    margin-top:8%
+}
+
+#contacto div img{
+}
+
+@media all and (min-width: 480px){
+    .icono{
+       width: 112px;
+    }
+    #conTlfImg{
+       margin-top:auto;
+    }
+       
+}
+@media all and (min-width: 768px){
+    #conTelefono p, #conLocal p{
+        font-size: 120%;
+        margin-left:5%
+            
+    }
+    #conTelefono, #conLocal{
+        margin-left:10%;
+        margin-top:5%
+    }
+    #mapa{
+        margin-top:3%;
+        height: 48%;
+    }
+    
+}
+@media all and (min-width: 860px){
+    #conTelefono p, #conLocal p{
+        font-size: 120%;
+        margin-left:5%
+            
+    }
+    #conTelefono, #conLocal{
+       width: 40%
+    }
+    #mapa{
+        width: 40%;
+        float:right;
+        margin-top:-28%;
+        margin-right: 5%;
+        height: 60%;
+    }
+    
+}

@@ -1,0 +1,76 @@
+#reservas{
+    font-family: fuenteCarta
+}
+#resFormulario.col-md-12{
+    margin-top:10%;
+    margin-left: 5%;
+}
+#resFormulario{
+    font-size:100%;
+    margin-top:3%
+}
+
+.resEtiqueta{
+    margin-top:5%;
+    border-bottom: solid green ;
+    color: red;
+}
+
+#resBoton{
+    margin-top:7%;
+    border-color:green;
+    background-color: lightgreen
+}
+
+.modal-footer > button{
+    background: green;
+        color: white;
+}
+.modal-content{
+    border: solid green;
+    margin-top:40%;
+    background-color: palegreen;
+}
+.modal-content label{
+    font-size: 100%;
+}
+.modal-header{
+    border-bottom: solid 1px grey
+}
+.modal-footer{
+    border-top: solid 1px grey
+}
+
+@media all and (min-width: 768px){
+    .resEtiqueta,#resBoton{
+        font-size:150%;
+        margin-top:8%
+    }
+    
+    #reservas .form-control, #resNum {
+        font-size:150%;
+        height: auto
+    }
+    
+}
+@media all and (min-width: 860px){
+		
+    .resEtiqueta,#resBoton{
+        font-size:150%;
+        margin-top:5%
+    }
+    #resFormulario{
+    font-size:100%;
+    margin-top:0%
+}
+   #resNombre, #resApellidos, #resEmail, #resPersonas{
+        
+    }
+    
+    
+    #reservas .form-control, #resNum {
+        font-size:150%;
+        height: auto
+    }
+    
+}
